@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* Concept 02 palette. Burgundy comes from the logo and is used sparingly. */
+@theme {
+  --color-c2-bone: #f4f0e8;
+  --color-c2-stone: #e6dfd3;
+  --color-c2-sand: #cfc3b1;
+  --color-c2-taupe: #9a8b7a;
+  --color-c2-umber: #62574c;
+  --color-c2-espresso: #26211d;
+  --color-c2-burgundy: #4a0a10;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-c2-bone);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
